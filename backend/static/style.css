@@ -1,0 +1,82 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+}
+
+#micButton {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#micButton.recording {
+    background-color: #dc3545;
+}
+
+#status {
+    margin-bottom: 10px;
+    font-style: italic;
+    color: #555;
+}
+
+#transcription,
+#assistantResponse {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    min-height: 30px;
+    text-align: left;
+}
+
+#conversationLog {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    max-height: 300px;
+    overflow-y: auto;
+    text-align: left;
+}
+
+.log-entry {
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+
+.log-entry.user {
+    background-color: #e7f3ff;
+    border-left: 3px solid #007bff;
+}
+
+.log-entry.assistant {
+    background-color: #f0f0f0;
+    border-left: 3px solid #28a745;
+}
+
+.log-entry strong {
+    display: block;
+    margin-bottom: 4px;
+} 
